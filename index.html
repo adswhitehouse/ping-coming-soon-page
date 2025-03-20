@@ -22,7 +22,9 @@
     />
   </head>
   <body class="ff-primary white-bg">
-    <a href="#"><img src="./images/logo.svg" alt="Company logo" /></a>
+    <a class="logo" href="#"
+      ><img src="./images/logo.svg" alt="Company logo"
+    /></a>
     <h1 class="tp-1 grey">
       We are launching <span class="tp-2 blue-1">soon!</span>
     </h1>
@@ -31,9 +33,10 @@
       <input
         type="email"
         placeholder="Your email address"
-        class="blue-1 tp-4"
+        class="blue-1 tp-4 jsFormInput"
       />
-      <button class="tp-5 white blue-2-bg">Notify Me</button>
+      <button class="tp-5 white blue-2-bg jsFormBtn">Notify Me</button>
+      <p class="tp-6 pink error-msg jsErrorMsg">Please provide a valid email</p>
     </form>
     <img
       class="main-img"
@@ -52,5 +55,6 @@
       ></a>
     </nav>
     <p class="tp-6 grey">&copy Copyright Ping. All rights reserved.</p>
+    <script src="./script.js"></script>
   </body>
 </html>

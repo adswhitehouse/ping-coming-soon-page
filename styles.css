@@ -109,6 +109,10 @@ textarea:not([rows]) {
   color: var(--blue-3);
 }
 
+.pink {
+  color: var(--pink);
+}
+
 /* Background Colors */
 .white-bg {
   background-color: var(--white);
@@ -154,12 +158,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 5rem 3rem;
+  padding: 5rem 5vw 3rem;
 }
 
 /* Content */
 h1 {
-  margin-block: 1rem 2.5rem;
+  margin-block: 2.5rem 1rem;
 }
 
 /* Form */
@@ -167,9 +171,9 @@ form {
   display: flex;
   max-width: 40rem;
   width: 100%;
-  height: 3.5rem;
   gap: 1rem;
   margin-block: 2.5rem 5.875rem;
+  position: relative;
 }
 
 form input {
@@ -178,6 +182,7 @@ form input {
   outline: none;
   border: 2px solid var(--blue-3);
   padding-inline: 1.875rem;
+  height: 3.5rem;
 }
 
 form input::placeholder {
@@ -190,10 +195,26 @@ form button {
   border-radius: 100rem;
   cursor: pointer;
   transition: background-color 0.25s;
+  height: 3.5rem;
 }
 
 form button:hover {
   background-color: var(--btn-hover);
+}
+
+.error-msg {
+  position: absolute;
+  bottom: -1.25rem;
+  left: 2rem;
+  display: none;
+}
+
+.error-border {
+  border: 2px solid var(--pink);
+}
+
+.error-msg-display {
+  display: block;
 }
 
 /* Main Image */
@@ -227,4 +248,49 @@ form button:hover {
 .social-icons a:hover {
   background-color: var(--blue-2);
   color: var(--white);
+}
+
+/* Media Query */
+@media screen and (max-width: 37rem) {
+  /* Variables */
+  :root {
+    --fs-1: 1.375rem;
+    --fs-2: 0.75rem;
+    --fs-3: 0.75rem;
+    --fs-4: 0.625rem;
+  }
+
+  /* Body */
+  body {
+    padding-bottom: 2.25rem;
+  }
+
+  /* Content */
+  .logo {
+    width: 3.5rem;
+  }
+
+  h1 {
+    margin-block: 2rem 1rem;
+  }
+
+  .main-img {
+    margin-bottom: 7.5rem;
+  }
+
+  /* Form */
+  form {
+    flex-direction: column;
+    margin-block: 2rem 4.5rem;
+    max-width: 25rem;
+  }
+
+  form input,
+  form button {
+    height: 2.5rem;
+  }
+
+  .error-msg {
+    bottom: 2.5rem;
+  }
 }
