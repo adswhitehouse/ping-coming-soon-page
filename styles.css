@@ -1,0 +1,150 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Variables */
+:root {
+  /* Font */
+  --ff-primary: "Libre Franklin", sans-serif;
+
+  /* Colors */
+  --white: #fff;
+  --grey: #969696;
+  --blue-1: #15202a;
+  --blue-2: #4c7bf3;
+  --blue-3: #b8c7ed;
+  --pink: #ff5466;
+  --btn-hover: #7196f5;
+
+  /* Font Sizes */
+  --fs-1: 3rem;
+  --fs-2: 1.25rem;
+  --fs-3: 1rem;
+  --fs-4: 0.75rem;
+
+  /* Font Weights */
+  --fw-1: 700;
+  --fw-2: 600;
+  --fw-3: 300;
+}
+
+/* Utility Classes */
+/* Font */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+/* Colors */
+.white {
+  color: var(--white);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.blue-1 {
+  color: var(--blue-1);
+}
+
+.blue-3 {
+  color: var(--blue-3);
+}
+
+/* Background Colors */
+.white-bg {
+  background-color: var(--white);
+}
+
+.blue-2-bg {
+  background-color: var(--blue-2);
+}
+
+/* Text Presets */
+.tp-1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-3);
+}
+
+.tp-2 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-1);
+}
+
+.tp-3 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-3);
+}
+
+.tp-4 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-3);
+}
+
+.tp-5 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-2);
+}
+
+.tp-6 {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-3);
+}
